@@ -14,6 +14,6 @@ jobs:
       fetch-depth: 0
       lfs: true
     - name: Push to hub
-    env:
-      HF_TOKEN: ${{ secrets.HF_TOKEN }}
-    run: git push -–force https://rondth:$HF_TOKEN@huggingface.co/spaces/rondth/fintech main
+      env:
+        HF_TOKEN: ${{ secrets.HF_TOKEN }}
+      run: git push -–force https://rondth:$HF_TOKEN@huggingface.co/spaces/rondth/fintech main
